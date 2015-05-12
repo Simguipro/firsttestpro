@@ -541,14 +541,14 @@ and t.Action=0 ))/24 as decimal(18,2)) 间隔时间,
 
         private void dataGridView2_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            //if (e.ColumnIndex == 0)
-            //{
-            //    if (e.CellStyle != null)
-            //    {
-            //        e.CellStyle.Font = new System.Drawing.Font("Arial", 8, FontStyle.Underline);
-            //        e.CellStyle.ForeColor = Color.Red;
-            //    }
-            //}
+            if (e.ColumnIndex == 0)
+            {
+                if (e.CellStyle != null)
+                {
+                    e.CellStyle.Font = new System.Drawing.Font("Arial", 8, FontStyle.Underline);
+                    e.CellStyle.ForeColor = Color.Red;
+                }
+            }
         }
 
 
