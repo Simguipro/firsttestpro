@@ -20,6 +20,9 @@ namespace TD_Pro
            // MessageBox.Show(Convert.ToDateTime(dateTimePicker1.Value.ToString("yyyy-MM-dd")));
           
             tab_show();
+#if DEBUG
+           messagebox.show("@");
+#endif
 
         }
      
